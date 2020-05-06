@@ -1,0 +1,20 @@
+.types-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 25px;
+
+    .type-box {
+        background-color: white;
+        border-radius: 3px;
+        padding: 5px 10px;
+        border: 1px solid rgba(0,0,0,.4);
+        color: rgba(0,0,0,.6);
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .type-box.active {
+        color: #18B877;
+        border: 1px solid #18B877;
+    }
+}

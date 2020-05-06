@@ -1,0 +1,39 @@
+.main {
+    margin-left: 250px;
+    transition: .3s;
+    padding: 10px 30px;
+    width: 100%;
+    max-width: 2000px;
+
+    .header-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid #C4C4C4;
+        .title-box {
+            color: #18B877;
+            font-weight: 500;
+            font-size: 1.3rem;
+            border-bottom: 5px solid #18B877;
+            padding: 10px 20px;
+            margin-bottom: -3px;
+            cursor: pointer;
+        }
+
+        @import "select_box";
+    }
+
+    .courses-box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+        grid-gap: 1rem;
+        padding: 1rem;
+        margin-top: 1.5rem;
+
+        @import "course_box";
+    }
+}
+
+.main.active {
+    margin-left: 0;
+}

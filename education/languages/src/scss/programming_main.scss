@@ -1,0 +1,46 @@
+.main {
+    margin-left: 250px;
+    transition: .3s;
+    padding: 10px 30px;
+    width: 100%;
+    max-width: 2000px;
+
+    .header-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid #C4C4C4;
+        .title-box {
+            display: flex;
+            .title {
+                color: #A6A6A6;
+                font-weight: 500;
+                font-size: 1.3rem;
+                padding: 10px 20px;
+                margin-bottom: -3px;
+                cursor: pointer;
+            }
+            .title.active {
+                color: #18B877;
+                border-bottom: 5px solid #18B877;
+            }
+        }
+
+        @import "select_box";
+    }
+
+    .courses-box {
+        display: grid;
+        grid-gap: 2em;
+        justify-content: space-between;
+        // padding: 0 70px;
+        padding-top: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+
+        @import "course_box";
+    }
+}
+
+.main.active {
+    margin-left: 0;
+}
